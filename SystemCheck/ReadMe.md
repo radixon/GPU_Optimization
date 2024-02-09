@@ -6,9 +6,10 @@
 3. IDE: VS Code
 
 ## How to check your system if running windows
-1. WINDOWS + R
-2. Under the 'System' tab you will find your 'Operating system'
-3. Under the 'Display' tab you will find your 'Chip Type'
+1. Keyboard shortcut: WINDOWS + R
+2. Run dxdiag
+3. Under the 'System' tab you will find your 'Operating system'
+4. Under the 'Display' tab you will find your 'Chip Type'
 
 An Nvidida GPU is required to run the CUDA API.  If you don't have a CUDA complier on your system, find the CUDA SDK Version for your specific Nvidia GPU can be found here: [https://en.wikipedia.org/wiki/CUDA](url) <br /><br />
 
