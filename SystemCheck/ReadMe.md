@@ -7,7 +7,7 @@
 
 ## How to check your system if running windows
 1. Keyboard shortcut: WINDOWS + R
-2. Run dxdiag
+2. Type dxdiag then click the return/enter key
 3. Under the 'System' tab you will find your 'Operating system'
 4. Under the 'Display' tab you will find your 'Chip Type'
 
