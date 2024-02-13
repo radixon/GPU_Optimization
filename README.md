@@ -3,6 +3,15 @@
 This repository is meant to follow my upskilling on GPGPU.  The focus will be on Compute Unified Device Architecture (CUDA) which is a parallel programming platform and API model created by Nvidia.
 <br /><br />
 
+## System Check
+
+This is a folder with a file designed to check whether a system has the necessary toolkit to run a CUDA C++ program.
+<br /><br />
+
+## Kernel Launch
+
+This folder is an introduction to some CUDA basics.  The basics are demonstrated with an 'hello_cuda' kernel to run.
+
 
 # Resources
 [1]  CUDA C++ Programming Guide found [https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html](url) <br />
