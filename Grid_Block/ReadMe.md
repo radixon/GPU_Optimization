@@ -4,14 +4,14 @@
 A kernel is defined with the __global__ declaration specifier.  A kernel is executed as a set of parallel threads.  Threads execute independently and perform the same operation on a subset of data.  CUDA is designed to execute 1000s of threads.  The number of CUDA threads executed for a givern kernel call is specified using the <<<...>>> execution configuration syntax.  Each thread that executes the kernel is given a unique thread ID that is accessible within the kernel through built-in variables.
 <br /><br />
 
-Threads can be identified using a one-dimensional, two-dimensional, or three-dimensional thread index.  The thread index is given by threadIdx, which is a 3-component vector.  threadIdx forms a one-dimensional, two-dimensional, or three-dimensional block of threads, the thread block.  Thre index of a thread and the thread ID are related as follows:
-One-Dimensional Block of size (Dx):  thread of index x = Dx
-Two-Dimensional Block of size (Dx, Dy):  thread of index (x, y) = x + y*Dx
+Threads can be identified using a one-dimensional, two-dimensional, or three-dimensional thread index.  The thread index is given by threadIdx, which is a 3-component vector.  threadIdx forms a one-dimensional, two-dimensional, or three-dimensional block of threads, the thread block.  Thre index of a thread and the thread ID are related as follows: <br />
+One-Dimensional Block of size (Dx):  thread of index x = Dx <br />
+Two-Dimensional Block of size (Dx, Dy):  thread of index (x, y) = x + y*Dx <br />
 Three-Dimensional Block of size (Dx, Dy, Dz):  thread of index (x, y, z) = x + y*Dx + z*Dx*Dy
 <br /><br />
 
-This brings us back to the <<<...>>> execution configuration syntax.  There are 4 kernel launch parameters, with the first two parameters representint the grid and block.  Grid is the collection of all threads launched in a kernel.  Block is organized groups of threads in a grid.
-	kernel_name <<<grid, block>>>(arguments)
+This brings us back to the <<<...>>> execution configuration syntax.  There are 4 kernel launch parameters, with the first two parameters representint the grid and block.  Grid is the collection of all threads launched in a kernel.  Block is organized groups of threads in a grid. <br />
+	<dd> kernel_name <<<grid, block>>>(arguments) </dd>
 <br /><br />
 
 In a two-dimension block, grid is the number of blocks and block is the threads per block.  For example, 32 threads broken into 8 blocks with 4 threads per block would be initialized as following: <br />
