@@ -1,4 +1,5 @@
-#CUDA #Threads in #C++ programming basics...
+# Grid Block Introduction
+<br /><br />
 
 A kernel is defined with the __global__ declaration specifier.  A kernel is executed as a set of parallel threads.  Threads execute independently and perform the same operation on a subset of data.  CUDA is designed to execute 1000s of threads.  The number of CUDA threads executed for a givern kernel call is specified using the <<<...>>> execution configuration syntax.  Each thread that executes the kernel is given a unique thread ID that is accessible within the kernel through built-in variables.
 <br /><br />
