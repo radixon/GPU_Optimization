@@ -37,11 +37,11 @@ dim3 is a vector type which have X, Y, and Z values default initialized to 1.  T
 
 The threads per block can be calculated with the total number of threads and the block information.  For example, 64 threads broken into 8x2 blocks. <br />
 Visualization <br />
-11111111<div>    22222222</div> 
-11111111<div>    22222222</div> 
+11111111    <div>22222222</div> <br />
+11111111    <div>22222222</div> 
 <br /><br />
-33333333<div>    44444444</div> 
-33333333<div>    44444444</div> 
+33333333    <div>44444444</div> <br />
+33333333    <div>44444444</div> 
 <br /><br />
 
 Grid derivation: <br />
