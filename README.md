@@ -11,7 +11,11 @@ This is a folder with a file designed to check whether a system has the necessar
 ## Kernel Launch
 
 This folder is an introduction to some CUDA basics.  The basics are demonstrated with an 'hello_cuda' kernel to run.
+<br /><br />
 
+## Grid Block
+
+This folder is an introduction to thread hierarchy.
 
 # Resources
 [1]  CUDA C++ Programming Guide found [https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html](url) <br />
