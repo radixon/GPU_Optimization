@@ -22,17 +22,23 @@ hello_cuda<<<numBlocks, threadsPerBlock>>>();
 ```
 <br /><br />
 
-Visualization with blocks having the same number: <br />
-1111   2222   3333  4444  5555  6666  7777  8888
-<br /><br />
-
 Using a single interger values to specify number of blocks and threads per block parameters can specify values for one-dimension only.  Specify multi-dimensional grids and blocks using
-	dim3 variable_name(X, Y, Z)
+* dim3 variable_name(X, Y, Z)
 <br /><br />
 
-dim3 is a vector type which have X, Y, and Z values default initialized to 1.  This means dim3 block(4,1,1) == dim3 block(4).  To access the X, Y, and Z values use the .x, .y, and .z method access convention.  A one-dimensional grid with 32 threads arrange in blocks of 3 can be specified with the dim3 variable as foolows:
-    dim3 block(4, 1, 1)
-    dim3 grid(8, 1, 1)
+To access each dimension of dim3 variable_name(X, Y, Z) use the following:
+* variable_name.x
+* variable_name.y
+* variable_name.z
+<br /><br />
+
+dim3 is a vector type which have X, Y, and Z values default initialized to 1.  This means dim3 block(4,1,1) == dim3 block(4).  A one-dimensional grid with 32 threads arrange in blocks of 4 can be specified with the dim3 variable as follows:
+* dim3 block(4, 1, 1)
+* dim3 grid(8, 1, 1)
+<br /><br />
+
+Visualization of one-dimensional grid with 32 threads arrange in blocks of 4
+![0002EX1](https://github.com/radixon/GPU_Optimization/assets/59415488/2ad04bd0-14ec-4765-be99-9bdf40c70dfb)
 <br /><br />
 
 The threads per block can be calculated with the total number of threads and the block information.  For example, 64 threads broken into 8x2 blocks. <br />
