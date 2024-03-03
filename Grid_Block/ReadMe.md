@@ -63,3 +63,5 @@ There is a limit to the number of threads per block.  All threads of a block are
 
 Resources <br />
 [1]  CUDA C++ Programming Fuide Release 12.3
+
+![0002hello_cuda](https://github.com/radixon/GPU_Optimization/assets/59415488/9094eaaa-c2bc-477d-abd7-7e78a870c5f0)
