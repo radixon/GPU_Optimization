@@ -49,8 +49,8 @@ Visualization <br />
 <br /><br />
 
 Grid derivation: <br />
-8x2 = 16, so there are 16 threads in the x direction. <br />
-64 / 16 = 4, so there are 4 threads in the y direction. <br />
+8 x 2 = 16, so there are 16 threads in the x direction. <br />
+2 x 2 = 4, so there are 4 threads in the y direction. <br />
 <br /><br />
 
 Thus with the given dim3 block information, dim3 grid can be calculated at runtime: <br />
