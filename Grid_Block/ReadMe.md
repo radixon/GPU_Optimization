@@ -39,15 +39,13 @@ dim3 is a vector type which have X, Y, and Z values default initialized to 1.  T
 
 Visualization of one-dimensional grid with 32 threads arrange in blocks of 4
 ![0002EX1](https://github.com/radixon/GPU_Optimization/assets/59415488/2ad04bd0-14ec-4765-be99-9bdf40c70dfb)
+<br />
+This shows blocks in groups of 4.  To achieve 32 threads, 8 blocks are required.  All threads are in the X dimension, so this is a one-dimensional thread.
 <br /><br />
 
 The threads per block can be calculated with the total number of threads and the block information.  For example, 64 threads broken into 8x2 blocks. <br />
 Visualization <br />
-11111111    <div>22222222</div> 
-11111111    <div>22222222</div> 
-<br /><br />
-33333333    <div>44444444</div> <br />
-33333333    <div>44444444</div> 
+![0002EX2](https://github.com/radixon/GPU_Optimization/assets/59415488/20e66c75-8d62-4feb-b4f6-8a8252145327)
 <br /><br />
 
 Grid derivation: <br />
