@@ -45,7 +45,7 @@ This shows blocks in groups of 4.  To achieve 32 threads, 8 blocks are required.
 
 The threads per block can be calculated with the total number of threads and the block information.  For example, 64 threads broken into 8x2 blocks. <br />
 Visualization <br />
-![0002EX2](https://github.com/radixon/GPU_Optimization/assets/59415488/20e66c75-8d62-4feb-b4f6-8a8252145327)
+![0002EX2](https://github.com/radixon/GPU_Optimization/assets/59415488/a30237c8-3064-4307-92d5-f89ef8160ecf)
 <br /><br />
 
 Grid derivation: <br />
