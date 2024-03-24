@@ -1,4 +1,4 @@
-#dim3 Variables
+# dim3 Variables
 
 threadIdx is a 3-component vector, so threads can be identified using a one-dimensional, two-dimensional, or three-dimensional thread index, forming a one-dimensional, two-dimensional, or three-dimensional, thread block, block of threads.  CUDA runtime uniquely initializes threadIdx variable for each thread depending on the thread location in the thread block.  The index of a thread is related to thread ID. For a one-dimensional block, the index of a thread is identical to the thread ID.  For a two-dimensional block of size (Dx, Dy), the thread ID of a thread of index (x, y) is (x + y*Dx).  For a three-dimensional block of size (Dx, Dy, Dz), the thread ID of a thread of index (x, y, z) is (x + y*Dx + z*Dx*Dy)
 <br/><br/>
