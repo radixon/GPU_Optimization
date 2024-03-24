@@ -19,6 +19,8 @@ Given an array of 8 elements.  A kernel with 8 threads in a one-dimensional grid
 threadIdx.X values corresponds to the index of the array.<br/>
 Array Index  0    1    2    3    4    5    6    7 <br/>
 threadIdx.X  0    1    2    3    4    5    6    7 <br/><br/>
+![dim3EX1](https://github.com/radixon/GPU_Optimization/assets/59415488/42f91823-e82f-4ba2-920b-90c2948ecdf1)
+
 
 
 Let's see an implementation.  Create a kernel that takes a single argurment, a pointer to an integer array.  This kernel will transfer memory from host to this pointer in the device.
