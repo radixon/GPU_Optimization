@@ -16,6 +16,17 @@ This folder is an introduction to some CUDA basics.  The basics are demonstrated
 ## Grid Block
 
 This folder is an introduction to thread hierarchy.
+<br /><br />
+
+## dim3 Variables
+
+This folder explains the various dim3 variables
+<br /><br />
+
+## Memory Transfer
+
+This folder explains cudaMemCpy and how memory is transfered from Host -> Device, Device -> Host, and Device -> Device.
+<br /><br />
 
 # Resources
 [1]  CUDA C++ Programming Guide found [https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html](url) <br />
