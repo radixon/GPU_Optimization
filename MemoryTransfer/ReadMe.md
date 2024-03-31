@@ -1,22 +1,25 @@
 # CUDA Threads in C++ Programming Memory Transfer
 
 The CUDA programming model assumes a system composed of a host and a device.  The host and device have separate memory.  Kernels operate out of device memory, so the runtime provides functions to allocate, deallocate, and copy device memory, as well as transfer data between host memory and device memory.
-	         
-CUDA Program Steps:
-->Data is initialized from host
-->-> Computationally intense tasks on data is given to the device (GPU)
-->-> host execution continues
-->->-> host waits until device execution is complete, then transfers results from device to host
+<br /><br />
 
-These steps require two memory transfers:
+CUDA Program Steps: <br />
+->Data is initialized from host <br />
+->-> Computationally intense tasks on data is given to the device (GPU) <br />
+->-> host execution continues <br />
+->->-> host waits until device execution is complete, then transfers results from device to host
+<br /><br />
+
+These steps require two memory transfers: <br />
 1.  After initializing data, there is a transfer from host to device.
 2.  After device computations are complete, there is a transfer from device to host.
-
+<br />
 This means, explicit memory transfers between host and device are required in CUDA programs.  cudaMemCpy function is used to transfer memory between host and device.
-
+<br />
 cudaMemCpy(destination pointer, source pointer, size of bytes being copied, memory transfer direction)
+<br /><br />
 
-Memory Transfer Directions:
+Memory Transfer Directions: <br />
 1.  Host to Device -> cudaMemcpyHostToDevice
 2.  Device to Host -> cudaMemcpyDeviceToHost
 3.  Device to Device -> cudaMemcpyDeviceToDevice
