@@ -39,7 +39,7 @@ int *host_input;
 host_input = (int*)malloc(bytes_arr);
 ```
 
-## Note: 
+## Note
 malloc function will return a void pointer, so the return pointer is cast to an integer pointer.
 
 ```C++
